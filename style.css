@@ -12,7 +12,7 @@ Width:100%;
 Height:100%;
 }
 :root{
-    --primary: #f8f9fd ;
+    --primary: #eaedfa ;
     --secondary: #152024 ;
     /* --secondary2: #7dea47 ; */
 }
@@ -22,14 +22,12 @@ body{
 }
 header{
     position: absolute;
-    /* background-color: rebeccapurple; */
     width: 100vw;
     height: 4.3vw;
     display: flex;
     justify-content: center;
 }
 nav{
-    /* background-color: aqua; */
     width: 97vw;
     display: flex;
     justify-content: space-between;
@@ -131,6 +129,7 @@ nav i:hover {
     color: transparent;
 }
 .page-1 iframe{
+    filter: drop-shadow(10px 2px 15px #13131386);
     object-fit: contain;
     width: 85%;
     height: 85%;
@@ -140,14 +139,13 @@ nav i:hover {
     bottom: 8%;
     right: 4%;
     position: absolute;
-    height: 4vw;
-    width: 12vw;
+    height: 80px;
+    width: 300px;
     background-color: var(--primary);
 }
 .page2{
     width: 100vw;
     height: 30vw;
-    /* background-color: var(--secondary); */
 }
 .page-2{
     width: 100%;
@@ -179,4 +177,33 @@ nav i:hover {
     font-size: 2vw;
     text-align: center;
     line-height: 2.2vw;
+}
+.bubbles{
+    position: relative;
+}
+.bubbles img{
+    position: absolute;
+    z-index: 98;
+    object-fit: cover;
+    opacity: 0.7;
+    filter: blur(.7px);
+    transition: all ease;
+}
+.bubbles img:nth-child(1){
+    top: -14vw;
+    left: -65vw;
+    width: 7vw;
+    height: 7vw;
+}
+.bubbles img:nth-child(2){
+    top: -8vw;
+    left: -5vw;
+    width: 7vw;
+    height: 7vw;
+}
+.bubbles img:nth-child(3){
+    top: 10vw;
+    left: -21vw;
+    width: 12vw;
+    height: 12vw;
 }
