@@ -33,3 +33,26 @@ heading.forEach(head => {
         })
     })
 });
+
+
+gsap.to('.page-2', {
+    scrollTrigger:{
+        trigger : '.page-1',
+        start:'top top',
+        end:'bottom 65%',
+        pin : true,
+    },
+    y:-300,
+})
+gsap.to('.page-1', {
+    scrollTrigger:{
+        trigger : '.page-2',
+        start:'-170% top',
+        end:'top 60%',
+        scrub:true,
+    },
+    opacity: 0.9,
+    scale:0.9,
+    filter:' blur(6px)',
+
+})

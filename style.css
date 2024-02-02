@@ -24,6 +24,7 @@ header{
     position: absolute;
     width: 100vw;
     height: 4.3vw;
+    z-index: 100;
     display: flex;
     justify-content: center;
 }
@@ -53,42 +54,46 @@ nav i:hover {
 }
 /**--------------------------------------navbar------------------------------------**/
 .navbar{
-    background-color: var(--secondary);
+    position: absolute;
     height: 100vh;
     width: 100vw;
-    position: absolute;
-    z-index: 99;
+    z-index: 97;
     margin-top: -100vh;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+ .navbar video{
+    mix-blend-mode: screen;
+    opacity: 0.4;
+    height: 105%;
+    background-color: var(--secondary);
+    width: 100%;
+    z-index: 98;
 }
 .nav-close{
-    width: 100%;
-    height: 12%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    position: absolute;
+    z-index: 99;
+    top: 2%;
+    right: 3%;
 }
 .nav-close i{
+    font-size: 3vw;
     color: var(--primary);
-    font-size: 3.2vw;
-    font-weight: 800;
-    margin-right: 2vw;
-    transition: all ease 0.3s;
 }
-.nav-close i:hover{
-    font-size: 2.95 vw;
-}
-.nav-main{
-    width: 95%;
-    height:80% ;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
+
 .nav-menu{
+    position: absolute;
+    z-index: 99;
     width: 30%;
-    height: 70%;
+    height: 50%;
+    right:10% ;
     display: flex;
     flex-wrap: wrap;
+    /* background-color: aqua; */
     overflow: hidden;
 }
 .nav-menu h1{
@@ -129,61 +134,30 @@ nav i:hover {
     color: transparent;
 }
 .page-1 iframe{
-    filter: drop-shadow(10px 2px 15px #13131386);
+    filter: drop-shadow(8px 2px 15px #13131386);
     object-fit: contain;
-    width: 85%;
-    height: 85%;
+    width: 91%;
+    height: 100%;
     position: absolute;
+    background-color: transparent;
+    z-index: 98;
 }
 .logo-hide{
-    bottom: 8%;
+    bottom: 0%;
     right: 4%;
     position: absolute;
-    height: 80px;
+    height: 130px;
     width: 300px;
+    z-index: 99;
     background-color: var(--primary);
 }
-.page2{
-    width: 100vw;
-    height: 30vw;
-}
-.page-2{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #CAEDFF;
-}
-.page-2-head{
-    width: 100%;
-    height: 40%;
-    display: flex;
-    align-items:flex-end;
-    justify-content: center;
-}
-.page-2-head h2{
-    word-spacing: 1vw;
-    font-size: 5vw;
-    color: var(--secondary);
-}
-.page-2-para{
-    width: 66%;
-    height: 55%;
-    display: flex;
-    align-items: flex-start;
-}
-.page-2-para p{
-    font-size: 2vw;
-    text-align: center;
-    line-height: 2.2vw;
-}
+
 .bubbles{
     position: relative;
 }
 .bubbles img{
     position: absolute;
-    z-index: 98;
+    z-index: 97;
     object-fit: cover;
     opacity: 0.7;
     filter: blur(.7px);
@@ -206,4 +180,92 @@ nav i:hover {
     left: -21vw;
     width: 12vw;
     height: 12vw;
+}
+/**--------------------------------------page-2------------------------------------**/
+.page-2{
+    width: 100vw;
+    height: 25vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color:#119ccf; */
+    background-image: linear-gradient(to right ,#4facfe,#06e2ed);
+    opacity: 0.9;
+}
+.page-2-head{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.page-2-head h2{
+    word-spacing: 1vw;
+    opacity: 1;
+    font-size: 5vw;
+    color: var(--secondary);
+    font-weight: 800;
+}
+.page-2-para{
+    width: 66%;
+    height: 55%;
+    display: flex;
+    align-items: flex-start;
+}
+.page-2-para p{
+    opacity: 1;
+    font-size: 2vw;
+    text-align: center;
+    color: var(--secondary);
+    line-height: 2.2vw;
+    font-weight:500;
+}
+/**--------------------------------------page-3------------------------------------**/
+.page-3{
+    height: 49.5vw;
+    width: 100vw;
+    position: relative;
+    margin-top: -31.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-3-main{
+    background-color: aqua;
+    width: 95%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.page-3-text{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.text-3{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.text h1{
+    font-size: 4vw;
+    font-weight: 800;
+    color: var(--secondary);
+}
+.text p{
+    font-size: 1vw;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--secondary);
+    margin-top: 1vw;
+}
+.page-3-card{
+    height: 100%;
+    width: 45%;
+    background-color: rebeccapurple;
 }
