@@ -225,4 +225,6 @@ nav i:hover {
     width: 100vw;
     background-color: rebeccapurple;
     height: 30vw;
+    position: relative;
+    margin-top: -16vw;
 }
