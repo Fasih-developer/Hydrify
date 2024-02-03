@@ -56,3 +56,19 @@ gsap.to('.page-1', {
     filter:' blur(6px)',
 
 })
+
+
+gsap.to('.text-3', {
+    scrollTrigger:{
+        trigger : '.class',
+        start:'-300% 8%',
+        end:'-180% bottom',
+        pin: '.page-3',
+        scrub:5,
+        markers:true,
+    },
+    y:'-180vw',
+    duration:1,
+    ease: "power3.inOutut",
+
+})

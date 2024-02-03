@@ -226,12 +226,13 @@ nav i:hover {
     width: 100vw;
     position: relative;
     margin-top: -31.5vh;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .page-3-main{
-    background-color: aqua;
+    background-color: aqua; 
     width: 95%;
     height: 90%;
     display: flex;
@@ -244,6 +245,7 @@ nav i:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     flex-wrap: wrap;
 }
 .text-3{
@@ -268,4 +270,12 @@ nav i:hover {
     height: 100%;
     width: 45%;
     background-color: rebeccapurple;
+}
+.page-4{
+    width: 100vw;
+    background-color: rebeccapurple;
+    height: 30vw;
+}
+.class{
+    background-color: red;
 }
