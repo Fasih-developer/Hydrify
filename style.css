@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap');
 *{ 
 Margin:0%;
 Padding:0%;
@@ -21,7 +22,7 @@ body{
     overflow-x: hidden;
 }
 header{
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 4.3vw;
     z-index: 100;
@@ -134,7 +135,7 @@ nav i:hover {
     color: transparent;
 }
 .page-1 iframe{
-    filter: drop-shadow(8px 2px 15px #13131386);
+    filter: drop-shadow(8px 2px 15px #1313136e);
     object-fit: contain;
     width: 91%;
     height: 100%;
@@ -184,7 +185,7 @@ nav i:hover {
 /**--------------------------------------page-2------------------------------------**/
 .page-2{
     width: 100vw;
-    height: 25vw;
+    height: 20vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -196,35 +197,143 @@ nav i:hover {
     width: 100%;
     height: 40%;
     display: flex;
-    align-items:center;
+    /* background-color: red; */
+    align-items:flex-end;
     justify-content: center;
 }
 .page-2-head h2{
     word-spacing: 1vw;
     opacity: 1;
-    font-size: 5vw;
+    font-size: 4.2vw;
     color: var(--secondary);
     font-weight: 800;
 }
 .page-2-para{
     width: 66%;
-    height: 55%;
+    /* background-color: red; */
+    height: 45%;
     display: flex;
     align-items: flex-start;
 }
 .page-2-para p{
     opacity: 1;
-    font-size: 2vw;
+    font-size: 1vw;
     text-align: center;
     color: var(--secondary);
-    line-height: 2.2vw;
+    line-height: 1.5vw;
     font-weight:500;
 }
 /**--------------------------------------page-3------------------------------------**/
-.page-4{
+.page-3{
     width: 100vw;
-    background-color: rebeccapurple;
-    height: 30vw;
+    /* background-color: rebeccapurple; */
+    height: 49.5vw;
     position: relative;
     margin-top: -16vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
+.text{
+    height: 26%;
+    padding-left: 5vw;
+    width: 49%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.text h1{
+    font-size: 4.5vw;
+    color: var(--secondary);
+    font-weight: 800;
+}
+.text p{
+    color: var(--secondary);
+    font-weight: 500;
+    text-transform: none;
+    font-size: 1.1vw;
+}
+.cards{
+    height: 92%;
+    width: 46%;
+    /* background-color: red; */
+    position: relative;
+}
+.card{
+    height: 20vw;
+    width: 20vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 2vw;
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#card1{
+    box-shadow: 4px 2px 15px #15202480;
+    transform: rotate(0deg)translate(-50%,-50%);
+    z-index: 4;
+}
+#card2{
+    transform: rotate(0deg)translate(-50%,-50%);
+    /* transform: rotate(15deg)translate(-58%,-38%); */
+    z-index: 5;
+}
+#card3{
+    transform: rotate(0deg)translate(-50%,-50%);
+    /* transform: rotate(-30deg)translate(-20%,-70%); */
+    z-index: 6;
+}
+#card4{
+    transform: rotate(0deg)translate(-50%,-50%);
+    /* transform: rotate(40deg)translate(-68%,-18%);Q */
+    z-index: 7;
+}
+/*---------------------------marque----------------------------------*/
+.section-4{
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-top: -5vw;
+}
+.section-4::-webkit-scrollbar{
+    display: none;
+}
+.mar{
+    animation: 16s scroll linear infinite ; 
+}
+.mar h4{
+    display: inline-block;
+    margin-left: 1.8vw;
+    font-size: 5vw;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 0.1vw var(--secondary);
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.mar h4:hover{
+        /* background-image: linear-gradient(to right ,#4facfe,#06e2ed);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 0vw black; */
+    color: var(--secondary);
+}
+@keyframes scroll {
+    from{
+        transform: translatex(0%);
+    }
+    to{
+        transform: translatex(-100%);
+    }
+}
+/*------------------------page 4-------------------------------------*/
