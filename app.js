@@ -94,7 +94,7 @@ gsap.to('.page-3', {
     scrollTrigger:{
         trigger : '.page-3',
         start:'top top',
-        end:'bottom 60%',
+        end:'bottom 10%',
         pin:'.page-3',
         markers:true,
         scrub:true,
@@ -109,27 +109,30 @@ gsap.to('#card4', {
         scrub:true,
     },
     ease:'power2.inout',
+    opacity:0,
     y:-1200,
 })
 gsap.to('#card3', {
     scrollTrigger:{
         trigger : '#card4',
-        start:'-5% top',
+        start:'25% top',
         // markers:true,
-        end:'1% top',
+        end:'31% top',
         scrub:true,
     },
     ease:'power2.inout',
+    opacity:0,
     y:-1200,
 })
 gsap.to('#card2', {
     scrollTrigger:{
         trigger : '#card4',
-        start:'15% top',
+        start:'57% top',
         // markers:true,
-        end:'20% top',
+        end:'60% top',
         scrub:true,
     },
     ease:'power2.inout',
     y:-1200,
+    opacity:0,
 })

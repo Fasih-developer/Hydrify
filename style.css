@@ -283,18 +283,18 @@ nav i:hover {
     z-index: 4;
 }
 #card2{
-    transform: rotate(0deg)translate(-50%,-50%);
-    /* transform: rotate(15deg)translate(-58%,-38%); */
+    /* transform: rotate(0deg)translate(-50%,-50%); */
+    transform: rotate(15deg)translate(-58%,-38%);
     z-index: 5;
 }
 #card3{
-    transform: rotate(0deg)translate(-50%,-50%);
-    /* transform: rotate(-30deg)translate(-20%,-70%); */
+    /* transform: rotate(0deg)translate(-50%,-50%); */
+    transform: rotate(-30deg)translate(-20%,-70%);
     z-index: 6;
 }
 #card4{
-    transform: rotate(0deg)translate(-50%,-50%);
-    /* transform: rotate(40deg)translate(-68%,-18%);Q */
+    /* transform: rotate(0deg)translate(-50%,-50%); */
+    transform: rotate(40deg)translate(-68%,-18%);
     z-index: 7;
 }
 /*---------------------------marque----------------------------------*/
