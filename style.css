@@ -217,7 +217,7 @@ nav i:hover {
 }
 .page-2-para p{
     opacity: 1;
-    font-size: 1vw;
+    font-size: 1.1vw;
     text-align: center;
     color: var(--secondary);
     line-height: 1.5vw;
@@ -278,7 +278,7 @@ nav i:hover {
     object-position: center;
 }
 #card1{
-    box-shadow: 4px 2px 15px #15202480;
+    box-shadow: 6px 6px 8px #15202480;
     transform: rotate(0deg)translate(-50%,-50%);
     z-index: 4;
 }
@@ -293,8 +293,8 @@ nav i:hover {
     z-index: 6;
 }
 #card4{
-    /* transform: rotate(0deg)translate(-50%,-50%); */
-    transform: rotate(40deg)translate(-68%,-18%);
+    transform: rotate(0deg)translate(-50%,-50%);
+    /* transform: rotate(40deg)translate(-68%,-18%); */
     z-index: 7;
 }
 /*---------------------------marque----------------------------------*/
